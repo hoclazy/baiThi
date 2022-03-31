@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+    arr = [2,4,4,8,10]
+    let a = +prompt('nhập giá trị cần tìm: ');
+    let count = 0
+    function timViTri(a) {
+        for (let i=0;i<arr.length;i++) {
+            if (a === arr[i]) {
+                count++;
+                alert(arr[i] + " có vị trí là: " +i);
+            }
+        }
+        if (count === 0) {
+            alert("không có trong mảng");
+        }
+    }
+    timViTri(a);
+
+
+    //vị trí trong mảng
+</script>
+</body>
+</html>
